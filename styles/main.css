@@ -2,3 +2,9 @@
     margin-top: 20px;
     border: 2px dotted gray;
 }
+
+.pattern {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #fefefe;
+}

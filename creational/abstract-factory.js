@@ -7,12 +7,12 @@ function AbstractFactory() {
 }
 
 AbstractFactory.prototype.createButton = function() {
-    this.button = new this.ButtonClass();
+    this.button = new this._ButtonClass();
     // abstract
 };
 
 AbstractFactory.prototype.createLegend = function() {
-    this.legend = new this.LegendClass();
+    this.legend = new this._LegendClass();
     // abstract
 };
 
@@ -55,13 +55,13 @@ function MobileLegend() {
 * */
 
 function DesktopFactory() {
-    this.ButtonClass = DesktopButton;
-    this.LegendClass = DesktopLegend;
+    this._ButtonClass = DesktopButton;
+    this._LegendClass = DesktopLegend;
 }
 
 function MobileFactory() {
-    this.ButtonClass = MobileButton;
-    this.LegendClass = MobileLegend;
+    this._ButtonClass = MobileButton;
+    this._LegendClass = MobileLegend;
 }
 
 DesktopFactory.prototype = new AbstractFactory();
