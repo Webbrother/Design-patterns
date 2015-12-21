@@ -63,3 +63,9 @@ var god = new God();
 god.create('man').speak();
 god.create('dog').speak();
 god.create('snake').speak();
+
+/* Another example of factory method*/
+
+var div = document.createElement('div');
+var p = document.createElement('p');
+var h1 = document.createElement('h1');
